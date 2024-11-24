@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Schedule</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Northern Nomad</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signup.html">Sign-Up</a></li>
+            <li><a href="login.html">Log-In</a></li>
+        </ul>
+    </nav>
+    <div class="schedule-container">
+        <h1>Schedule Your Camping Trip</h1>
+        <form action="/schedule" method="POST">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <fieldset>
+                <legend>Select Preferred Days:</legend>
+                <div>
+                    <input type="checkbox" id="monday" name="days[]" value="Monday">
+                    <label for="monday">Monday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tuesday" name="days[]" value="Tuesday">
+                    <label for="tuesday">Tuesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="wednesday" name="days[]" value="Wednesday">
+                    <label for="wednesday">Wednesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="thursday" name="days[]" value="Thursday">
+                    <label for="thursday">Thursday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="friday" name="days[]" value="Friday">
+                    <label for="friday">Friday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="saturday" name="days[]" value="Saturday">
+                    <label for="saturday">Saturday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sunday" name="days[]" value="Sunday">
+                    <label for="sunday">Sunday</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Schedule</button>
+        </form>
+    </div>
+</body>
+</html>
