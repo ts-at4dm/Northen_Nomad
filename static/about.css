@@ -1,0 +1,117 @@
+body {
+  background-color: #f9f9f7;
+  color: #00246B; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00324D;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar-right a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+.about-hero {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.about-hero .overlay {
+  background-color: rgba(0, 36, 107, 0.75); 
+  width: 100%;
+  padding: 60px 20px;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.about-hero p {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+}
+.about-content {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+.about-content h2 {
+  color: #00246B;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #00246B;
+  padding-bottom: 8px;
+}
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #222;
+}
+.about-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 1.1rem;
+}
+.about-content ul li {
+  margin-bottom: 10px;
+}
+.about-content a {
+  color: #00246B;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.about-content a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #00246B;
+  color: #f0f0f0;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.footer-left, .footer-center, .footer-right {
+  margin: 5px 0;
+}
+.footer-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}

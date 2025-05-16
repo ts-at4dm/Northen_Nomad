@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Northern Nomad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}">
+  <script defer src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+</head>
+<body>
+  <nav class="navbar"> 
+    <div class="navbar-left">NN</div>
+    <div class="navbar-right">
+      <a href="/">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="#">Campers</a>
+      <a href="{{ url_for('login') }}">Login</a>
+    </div>
+  </nav>
+  <header class="hero-carousel">
+    <div class="carousel-wrapper">
+      <div class="slides-track">
+        <img src="{{ url_for('static', filename='../static/images/camper_1.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='../static/images/camper_2.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='../static/images/camper_3.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='../static/images/camper_4.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='../static/images/camper_5.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='../static/images/camper_1.jpg') }}" class="slide">
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1>Northern Nomad</h1>
+      <p>Rent, Camp, Explore</p>
+      <a href="#" class="rent-button">Rent Now!</a>
+    </div>
+  </header>
+  <section class="camper-categories">
+    <h2>Find Your Perfect Camper</h2>
+    <div class="grid">
+      <div class="category-card">
+        <img src="/static/images/camper_2.jpg" alt="Small Camper" />
+        <h3>Small Camper</h3>
+        <p>Cozy and compact for solo or couples adventures.</p>
+      </div>
+      <div class="category-card">
+        <img src="/static/images/camper_1.jpg" alt="Medium Camper" />
+        <h3>Medium Camper</h3>
+        <p>Perfect for small families with comfort and style.</p>
+      </div>
+      <div class="category-card">
+        <img src="/static/images/camper_6.jpg" alt="Large Camper" />
+        <h3>Large Camper</h3>
+        <p>Spacious for big groups and long road trips.</p>
+      </div>
+    </div>
+  </section>
+  <section class="popular-campgrounds">
+    <h2>Popular Campgrounds in the Northeast</h2>
+    <div class="campgrounds-grid">
+      <a href="https://www.webreserv.com/abolbridgecampgroundandstoreme" target="_blank" class="campground-card">
+        <img src="/static/images/abol_campground.jpg" alt="Abol Campground" />
+        <h3>Abol Campground Millinocket, ME</h3>
+        <p>Experience pristine wilderness and majestic mountain views.</p>
+      </a>
+      <a href="https://www.nps.gov/acad/index.htm" target="_blank" class="campground-card">
+        <img src="/static/images/docks.jpg" alt="Acadia National Park" />
+        <h3>Acadia National Park, ME</h3>
+        <p>Coastal beauty with rugged landscapes and scenic trails.</p>
+      </a>
+      <a href="https://www.fs.usda.gov/whitemountain" target="_blank" class="campground-card">
+        <img src="/static/images/white-mountain.jpg" alt="White Mountains" />
+        <h3>White Mountains, NH</h3>
+        <p>Explore breathtaking mountains and outdoor adventures.</p>
+      </a>
+      <a href="https://www.adirondack.net/" target="_blank" class="campground-card">
+        <img src="/static/images/adirondacks.jpg" alt="Adirondacks" />
+        <h3>Adirondacks, NY</h3>
+        <p>Sprawling forests, lakes, and year-round activities.</p>
+      </a>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Northern Nomad</h3>
+        <p>Your Adventure Starts Here</p>
+      </div>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="/">Home</a> |
+          <a href="{{ url_for('about') }}">About</a> |
+          <a href="#">Campers</a> |
+          <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p>Contact: <a href="mailto:info@northernnomad.com">info@northernnomad.com</a></p>
+        <p>© 2025 Northern Nomad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

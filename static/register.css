@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    background-image: url("/static/images/login_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00324D;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.navbar-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-right a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); 
+}
+.login-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-card h2 {
+    color: #00246B;
+    margin-bottom: 1.5rem;
+}
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+.login-card label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #00246B;
+    font-weight: bold;
+}
+.login-card input {
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.login-card button {
+    padding: 0.75rem;
+    background-color: #00246B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-card button:hover {
+    background-color: #001a4d;
+}
+.login-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.login-links a {
+    color: #00246B;
+    text-decoration: none;
+}
+.login-links a:hover {
+    text-decoration: underline;
+}
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.flash {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.flash.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.flash.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.site-footer {
+  background-color: #00246B;
+  color: #f0f0f0;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.footer-left, .footer-center, .footer-right {
+  margin: 5px 0;
+}
+.footer-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+

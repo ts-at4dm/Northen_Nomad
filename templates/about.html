@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Northern Nomad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/about.css') }}">
+</head>
+<body>
+  <nav class="navbar"> 
+    <div class="navbar-left">NN</div>
+    <div class="navbar-right">
+      <a href="/">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="#">Campers</a>
+      <a href="{{ url_for('login') }}">Login</a>
+    </div>
+  </nav>
+  <section class="about-hero" style="background-image: url('/static/images/about-hero.jpg');">
+    <div class="overlay">
+      <h1>About Northern Nomad</h1>
+      <p>Your Adventure Starts Here</p>
+    </div>
+  </section>
+  <section class="about-content container">
+    <h2>Who We Are</h2>
+    <p>
+      Northern Nomad is your trusted partner in outdoor adventure and exploration. Founded with a passion for the open road and the great outdoors, we specialize in providing high-quality camper and RV rentals tailored for travelers seeking unforgettable experiences in the Northeast and beyond.
+    </p>
+    <h2>Our Mission</h2>
+    <p>
+      At Northern Nomad, our mission is simple: to make the joys of camping and road travel accessible, convenient, and affordable. Whether you’re a seasoned nomad or a first-time explorer, we equip you with the perfect camper to embrace freedom on your terms — no matter where the road leads.
+    </p>
+    <h2>Why Choose Northern Nomad?</h2>
+    <ul>
+      <li><strong>Quality Fleet:</strong> We maintain a diverse selection of well-maintained campers, from cozy small campers perfect for couples to spacious family-friendly RVs equipped with modern amenities.</li>
+      <li><strong>Local Expertise:</strong> Based in the Northeast, we understand the unique charm and landscapes of this region. We’re passionate about connecting you with incredible destinations like Acadia National Park, the White Mountains, and the Adirondacks.</li>
+      <li><strong>Customer-Centered Service:</strong> Our dedicated team provides personalized support to help you choose the right camper and plan your adventure. From booking to your return, we’re here to ensure a smooth, memorable experience.</li>
+      <li><strong>Flexible Rentals:</strong> Whether you need a weekend getaway or a month-long expedition, we offer flexible rental periods and competitive pricing tailored to your schedule and budget.</li>
+    </ul>
+    <h2>How It Works</h2>
+    <p>
+      Renting a camper with Northern Nomad is as easy as packing your bags. Browse our fleet online, select the camper that fits your adventure style, and book instantly. Our streamlined process ensures you spend less time planning and more time exploring.
+    </p>
+    <h2>Our Commitment to Safety & Cleanliness</h2>
+    <p>
+      Your safety is our top priority. Each camper undergoes thorough cleaning and maintenance after every rental. We adhere to strict health and safety protocols so you can enjoy your trip with peace of mind.
+    </p>
+    <h2>Join the Northern Nomad Community</h2>
+    <p>
+      We’re more than just a rental company — we’re a community of outdoor lovers and adventurers. Follow us on social media, share your stories, and discover insider tips for making the most of your camping experience.
+    </p>
+    <h2>Contact Us</h2>
+    <p>
+      Have questions or need help planning your trip? Our team is ready to assist. Reach out anytime at <a href="mailto:info@northernnomad.com">info@northernnomad.com</a> or call us at (555) 123-4567.
+    </p>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Northern Nomad</h3>
+        <p>Your Adventure Starts Here</p>
+      </div>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="/">Home</a> |
+          <a href="{{ url_for('about') }}">About</a> |
+          <a href="#">Campers</a> |
+          <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p>Contact: <a href="mailto:info@northernnomad.com">info@northernnomad.com</a></p>
+        <p>© 2025 Northern Nomad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

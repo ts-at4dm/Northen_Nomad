@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Northern Nomad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+  <nav class="navbar"> 
+    <div class="navbar-left">NN</div>
+    <div class="navbar-right">
+      <a href="/">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="#">Campers</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="dashboard-header">
+      <h2>Welcome, {{ user.username }}!</h2>
+      <p>Here's a snapshot of your account activity.</p>
+    </div>
+    <div class="dashboard-section">
+      <h3>Your Current Booking</h3>
+      <p>You don’t have any active bookings.</p>
+      <a href="{{ url_for('home') }}" class="button">Browse Campers</a>
+    </div>
+    <div class="dashboard-section">
+      <h3>Account Settings</h3>
+      <p>Update your username or password.</p>
+      <a href="#" class="button">Edit Account</a>
+    </div> 
+    <div class="dashboard-section">
+      <h3>Booking History</h3>
+      <p>No past rentals yet.</p>
+    </div>
+    <div class="dashboard-section">
+      <h3>Need Help?</h3>
+      <p><a href="#" class="support-link">Contact support</a> if you have questions or need assistance.</p>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Northern Nomad</h3>
+        <p>Your Adventure Starts Here</p>
+      </div>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="/">Home</a> |
+          <a href="{{ url_for('about') }}">About</a> |
+          <a href="#">Campers</a> |
+          <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p>Contact: <a href="mailto:info@northernnomad.com">info@northernnomad.com</a></p>
+        <p>© 2025 Northern Nomad</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

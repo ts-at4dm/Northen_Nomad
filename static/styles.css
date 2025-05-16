@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00324D;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.navbar-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-right a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slides-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+    width: 100%; 
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.hero-text {
+    position: absolute;
+    bottom: 260px;
+    left: 180px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+}
+.hero-text h1 {
+    color: #00324D; 
+    margin: 0; 
+    font-size: 2.5rem;
+    text-shadow:
+        -1px -1px 0 #999999,
+         1px -1px 0 #999999,
+        -1px  1px 0 #999999,
+         1px  1px 0 #999999;
+}
+.hero-text p {
+    color: #999999; 
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #00324D,
+         1px -1px 0 #00324D,
+        -1px  1px 0 #00324D,
+         1px  1px 0 #00324D;
+}
+.rent-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #00324D;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #999999;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.rent-button:hover {
+    background-color: #001a33;
+    transform: scale(1.05);
+}
+
+.camper-categories {
+  background: #f9f9f5;
+  padding: 40px 20px;
+  color: #00246B;
+  text-align: center;
+}
+.camper-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.category-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 36 107 / 0.15);
+  max-width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.category-card:hover {
+  transform: translateY(-8px);
+}
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.category-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #444;
+}
+.popular-campgrounds {
+  background: #fff;
+  padding: 40px 20px;
+  color: #00246B;
+  text-align: center;
+}
+.popular-campgrounds h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.campgrounds-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.campground-card {
+  background: #f9f9f5; 
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 36 107 / 0.1);
+  max-width: 280px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.campground-card:hover {
+  transform: translateY(-6px);
+}
+.campground-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.campground-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.campground-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.site-footer {
+  background-color: #00246B;
+  color: #f0f0f0;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.footer-left, .footer-center, .footer-right {
+  margin: 5px 0;
+}
+.footer-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}

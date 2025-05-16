@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register - Northern Nomad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}" />
+</head>
+<body>
+  <nav class="navbar"> 
+    <div class="navbar-left">NN</div>
+    <div class="navbar-right">
+      <a href="/">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="#">Campers</a>
+      <a href="{{ url_for('login') }}">Login</a>
+    </div>
+  </nav>
+  <section class="login-section">
+    <div class="login-card">
+      <h2>Register</h2>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      <form method="POST" action="{{ url_for('register') }}">
+        <label for="username">Username</label>
+        <input type="text" name="username" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" required />
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Northern Nomad</h3>
+        <p>Your Adventure Starts Here</p>
+      </div>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="/">Home</a> |
+          <a href="{{ url_for('about') }}">About</a> |
+          <a href="#">Campers</a> |
+          <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p>Contact: <a href="mailto:info@northernnomad.com">info@northernnomad.com</a></p>
+        <p>© 2025 Northern Nomad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
